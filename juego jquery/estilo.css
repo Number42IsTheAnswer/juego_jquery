@@ -1,0 +1,148 @@
+
+body{
+    background-color: crimson;
+}
+
+h1{
+    font-size: 250%;
+    color: white;
+    text-align: center;
+    text-shadow: 2px 2px 2px rgb(0, 0, 0);
+}
+
+.tabla{
+    background-color: aqua;
+    border: 2px solid black;
+    border-radius: 10px;
+    box-shadow: 5px 5px 0px 0px rgb(5, 9, 245);
+    padding: 50px;
+    margin:3px 3px;
+}
+
+.tabla:hover{
+    border: 2px solid rgb(255, 0, 0);
+}
+
+.todaTabla{
+    display: block;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    margin: -120px 0 0 -190px;
+    background-color: yellow;
+    border: 20px solid rgb(197, 197, 3);
+    border-style: outset;
+    border-radius: 10px;
+}
+
+.linea1, .linea2, .linea3{
+    display: flex;
+    justify-content: center;
+}
+
+.botones{
+    height: 2em;
+    margin-top: 20px;
+    display: flex;
+    justify-content: space-around;
+}
+
+#limpiar{
+    line-height: 2px;
+    padding: 15px;
+    background-color: rgb(0, 0, 0);
+    color: rgb(252, 252, 252);
+    border: 2px solid rgb(255, 255, 255);
+    border-radius: 5px;
+}
+
+.casillaElegida{
+    color: transparent;
+    background-color: yellow;
+    box-shadow: 0px 0px 0px 0px;
+}
+
+.casillaRandom{
+    color: rgb(0, 255, 55);
+    background-color: rgb(0, 255, 55);
+    box-shadow: 0px 0px 0px 0px;
+}
+
+.tabla[data-turno='1']{
+    color: yellow;
+    background-color: yellow;
+    box-shadow: 0px 0px 0px 0px;
+}
+
+.tabla[data-turno='2']{
+    color: rgb(0, 255, 55);
+    background-color: rgb(0, 255, 55);
+    box-shadow: 0px 0px 0px 0px;
+}
+
+.turno{
+    font-size: 150%;
+    color: white;
+    text-align: center;
+    text-shadow: 2px 2px 2px rgb(0, 0, 0);
+    position: fixed;
+    bottom: 0;
+    left: 50%;
+    padding-bottom: 20px;
+}
+
+.resultado{
+border: 2px solid black;
+border-radius: 5px;
+text-align: center;
+text-transform: uppercase;
+font-weight: bolder;
+font-size: 1.5em;
+color:black;
+background-color: white;
+margin-top: 10px;
+padding: 10px;
+
+}
+
+@media screen and (min-width: 401px) and (max-width: 800px) {
+    .todaTabla{
+        display: block;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        margin: -30px 0 0 -185px;
+        background-color: yellow;
+        border: 20px solid rgb(197, 197, 3);
+        border-style: outset;
+        border-radius: 10px;
+    }
+
+    .turno{
+        position: sticky;
+        ;
+        left: 50%;
+    }
+    
+}
+
+@media screen and (max-width: 400px) {
+    .todaTabla{
+        display: block;
+        position: absolute;
+        top: 65%;
+        left: 50%;
+        margin: -30px 0 0 -185px;
+        background-color: yellow;
+        border: 20px solid rgb(197, 197, 3);
+        border-style: outset;
+        border-radius: 10px;
+    }
+
+    .turno{
+        position: sticky;
+        ;
+        left: 50%;
+    }
+    
+}
